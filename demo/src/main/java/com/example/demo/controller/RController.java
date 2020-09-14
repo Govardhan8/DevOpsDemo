@@ -16,4 +16,11 @@ public class RController {
 		MyName name=new MyName(1, "gova");
 		return name;
 	}
+	
+	@GetMapping("/getname")
+	public MyName name()
+	{
+		MyName name=new MyName(1, "Govardhan");
+		return name;
+	}	
 }
